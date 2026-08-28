@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CKD News Monitor</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --chip: #eef2ff;
+      --chip-text: #3730a3;
+      --accent: #111827;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 32px 16px 56px;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: -0.04em;
+    }
+
+    .desc {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1fr 180px 180px;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    input, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 11px 12px;
+      font-size: 14px;
+      background: #fff;
+      color: var(--text);
+      outline: none;
+    }
+
+    input:focus, select:focus {
+      border-color: #9ca3af;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      flex-wrap: wrap;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 14px 10px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      background: #fafafa;
+      white-space: nowrap;
+    }
+
+    tr:hover td {
+      background: #fcfcfd;
+    }
+
+    .date { width: 120px; white-space: nowrap; color: var(--muted); }
+    .company { width: 130px; }
+    .link { width: 70px; white-space: nowrap; }
+
+    .title {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .summary {
+      color: #4b5563;
+      font-size: 13px;
+    }
+
+    .source {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 6px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: var(--chip);
+      color: var(--chip-text);
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0 4px 4px 0;
+      white-space: nowrap;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .empty {
+      padding: 40px 12px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 20px;
+      color: #9ca3af;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .toolbar {
+        grid-template-columns: 1fr;
+      }
+
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        margin-bottom: 12px;
+        overflow: hidden;
+        background: #fff;
+      }
+
+      td {
+        border-bottom: none;
+        padding: 10px 12px;
+      }
+
+      .date, .company, .link {
+        width: auto;
+      }
+
+      td::before {
+        content: attr(data-label);
+        display: block;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>CKD News Monitor</h1>
+      <p class="desc">Google News 모니터링에서 발송 처리된 공개 뉴스만 모아 보여줍니다.</p>
+    </header>
+
+    <section class="panel">
+      <div class="toolbar">
+        <input id="searchInput" type="search" placeholder="제목, 요약, 회사명 검색" />
+        <select id="companyFilter">
+          <option value="">전체 회사</option>
+        </select>
+      </div>
+
+      <div class="meta-row">
+        <div id="countText">불러오는 중...</div>
+        <div id="updatedText"></div>
+      </div>
+
+      <div id="tableRoot"></div>
+    </section>
+
+    <footer>
+      Public news only. Internal notes, API keys and recipients are not included.
+    </footer>
+  </div>
+
+  <script>
+    const DATA_URL = './data/public_news.json';
+    let allItems = [];
+
+    const searchInput = document.getElementById('searchInput');
+    const companyFilter = document.getElementById('companyFilter');
+    const countText = document.getElementById('countText');
+    const updatedText = document.getElementById('updatedText');
+    const tableRoot = document.getElementById('tableRoot');
+
+    async function init() {
+      try {
+        const response = await fetch(DATA_URL + '?v=' + Date.now(), { cache: 'no-store' });
+        if (!response.ok) throw new Error('데이터 파일을 불러오지 못했습니다.');
+
+        const data = await response.json();
+        allItems = Array.isArray(data.items) ? data.items : [];
+
+        renderMeta(data);
+        setupFilters(allItems);
+        render();
+      } catch (error) {
+        countText.textContent = '데이터 로딩 실패';
+        tableRoot.innerHTML = '<div class="empty">' + escapeHtml(error.message) + '</div>';
+      }
+    }
+
+    function renderMeta(data) {
+      const updatedAt = data.generatedAt ? new Date(data.generatedAt) : null;
+      updatedText.textContent = updatedAt && !Number.isNaN(updatedAt.getTime())
+        ? '업데이트: ' + formatDate(updatedAt)
+        : '';
+    }
+
+    function setupFilters(items) {
+      const companies = unique(items.map(item => item.company).filter(Boolean));
+
+      companies.forEach(company => {
+        const option = document.createElement('option');
+        option.value = company;
+        option.textContent = company;
+        companyFilter.appendChild(option);
+      });
+    }
+
+    function render() {
+      const q = searchInput.value.trim().toLowerCase();
+      const company = companyFilter.value;
+
+      const filtered = allItems.filter(item => {
+        const itemCompany = item.company || '';
+        const haystack = [
+          item.title,
+          item.summary,
+          item.source,
+          itemCompany
+        ].join(' ').toLowerCase();
+
+        if (q && !haystack.includes(q)) return false;
+        if (company && itemCompany !== company) return false;
+        return true;
+      });
+
+      countText.textContent = '총 ' + filtered.length.toLocaleString('ko-KR') + '건';
+
+      if (filtered.length === 0) {
+        tableRoot.innerHTML = '<div class="empty">표시할 뉴스가 없습니다.</div>';
+        return;
+      }
+
+      tableRoot.innerHTML = `
+        <table>
+          <thead>
+            <tr>
+              <th>일시</th>
+              <th>회사</th>
+              <th>뉴스</th>
+              <th>링크</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${filtered.map(renderRow).join('')}
+          </tbody>
+        </table>
+      `;
+    }
+
+    function renderRow(item) {
+      const companyText = item.company || '';
+      const dateText = item.pubDate ? formatDate(new Date(item.pubDate)) : '';
+      const link = item.link || '#';
+
+      return `
+        <tr>
+          <td class="date" data-label="일시">${escapeHtml(dateText)}</td>
+          <td class="company" data-label="회사">${escapeHtml(companyText)}</td>
+          <td data-label="뉴스">
+            <div class="title">${escapeHtml(item.title || '')}</div>
+            <div class="summary">${escapeHtml(item.summary || '')}</div>
+            <div class="source">${escapeHtml(item.source || '')}</div>
+          </td>
+          <td class="link" data-label="링크"><a href="${escapeAttribute(link)}" target="_blank" rel="noopener noreferrer">열기</a></td>
+        </tr>
+      `;
+    }
+
+    function unique(list) {
+      return Array.from(new Set(list)).sort((a, b) => a.localeCompare(b, 'ko'));
+    }
+
+    function formatDate(date) {
+      if (!date || Number.isNaN(date.getTime())) return '';
+      return new Intl.DateTimeFormat('ko-KR', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      }).format(date);
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? '')
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+    }
+
+    function escapeAttribute(value) {
+      return escapeHtml(value).replaceAll('`', '&#096;');
+    }
+
+    searchInput.addEventListener('input', render);
+    companyFilter.addEventListener('change', render);
+
+    init();
+  </script>
+</body>
+</html>
