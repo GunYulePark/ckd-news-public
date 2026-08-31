@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-31T01:27:22.343Z",
+  "generatedAt": "2026-08-31T22:49:44.323Z",
   "count": 6,
-  "watchCount": 0,
+  "watchCount": 1,
   "items": [
     {
       "id": "issue_20260831_095317_d0af41b9",
@@ -70,5 +70,17 @@
       "publicStatus": "SENT"
     }
   ],
-  "watchItems": []
+  "watchItems": [
+    {
+      "id": "issue_20260901_074939_634e9f72",
+      "company": "종근당홀딩스",
+      "title": "[Who Is ?] 최희남 종근당홀딩스 대표이사 사장 - 비즈니스포스트",
+      "summary": "종근당홀딩스 최희남 대표이사 사장의 인물 정보가 보도되었다. 그의 경력과 주요 활동을 다루는 기사이다.",
+      "source": "비즈니스포스트",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OMGhXbWFJU21uMW5GdUdIbkd0TUtvVUotZ2lnSnFVN3ZyQl9kQXdZMFRZMHNraHFUWnJqUUpVd2l5ZWE4aTJJUWk3VUVPSHJYU1MyV1JZa181ZDlINXFfN2xWRU1LX01pNmRjQmt5UEtGMUk?oc=5",
+      "pubDate": "2026-08-31T22:00:00.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    }
+  ]
 }
