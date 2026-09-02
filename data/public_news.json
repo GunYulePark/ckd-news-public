@@ -1,8 +1,19 @@
 {
-  "generatedAt": "2026-08-31T22:49:44.323Z",
-  "count": 6,
-  "watchCount": 1,
+  "generatedAt": "2026-09-02T08:12:35.838Z",
+  "count": 7,
+  "watchCount": 5,
   "items": [
+    {
+      "id": "issue_20260902_165555_5cf5fb89",
+      "company": "종근당",
+      "title": "노바티스, 종근당 CKD-510 별도 1상 추진...신장기능 저하 환자 대상 - PRESS9",
+      "summary": "노바티스가 종근당의 신약 후보물질 'CKD-510'에 대해 신장기능 저하 환자를 대상으로 별도 임상 1상을 추진한다. 이는 CKD-510의 개발 및 상업화 가능성을 높이는 중요한 단계이다.",
+      "source": "PRESS9",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uQkpHZ0o2VTM5MUpaNnh6SzU0Rk9wZUdPcDJTNTBBOXJiY29mWW1nZXJmSGhJTVgtWEN3MTdrbUZmTVROZV9iZHJwWjdOVjBZS1VjWkgwRjhybURUSWQweG9la18?oc=5",
+      "pubDate": "2026-09-02T07:07:30.000Z",
+      "sentAt": "2026-09-02T08:12:34.689Z",
+      "publicStatus": "SENT"
+    },
     {
       "id": "issue_20260831_095317_d0af41b9",
       "company": "종근당",
@@ -72,6 +83,28 @@
   ],
   "watchItems": [
     {
+      "id": "issue_20260902_075042_d5d55996",
+      "company": "종근당",
+      "title": "종근당, 美 망막 신약 국내 개발 ‘운전대’…희귀 안질환 확장 - 팜이데일리",
+      "summary": "종근당이 미국 망막 신약의 국내 개발을 주도하며 희귀 안질환 분야로 사업을 확장한다. 이는 종근당의 신약 개발 역량 강화 및 파이프라인 확대를 의미한다.",
+      "source": "팜이데일리",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDSk1PemJqQk9kMDV0Q196NWtXQzRXSkEtRi1XMWJwYVVtaFhGVXJ1U3dWWkRYUUtEZm83OFBoTkhqcUFhRlE2OENCYl9QWlV5U0NQal9PRk5qOURQemVQazVQWll4QkhLMjhiX3pB?oc=5",
+      "pubDate": "2026-09-01T22:00:04.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20260901_124916_0f0f0387",
+      "company": "종근당",
+      "title": "아첼라·뉴라테온 212억 베팅…종근당 R&D '투트랙' 가속 - 비즈워치",
+      "summary": "종근당이 아첼라와 뉴라테온에 212억 원을 투자하며 R&D '투트랙' 전략을 가속화한다. 이는 신약 개발 역량 강화 및 파이프라인 확대를 위한 움직임이다.",
+      "source": "비즈워치",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ZYzVEd0tkaEp6WnI3NmhMZDhsMEVPRjhOTG5UNmdoR2RjYm8zdnVYWF8tVC15b1lLRy1KS19CYnBUdEpUWC1CYzJyT1NZU3JmbnphWk91cHVFVUo4ZlFCUTVOMEtYS284dWVzSDVCZw?oc=5",
+      "pubDate": "2026-09-01T03:00:03.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
       "id": "issue_20260901_074939_634e9f72",
       "company": "종근당홀딩스",
       "title": "[Who Is ?] 최희남 종근당홀딩스 대표이사 사장 - 비즈니스포스트",
@@ -79,6 +112,28 @@
       "source": "비즈니스포스트",
       "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OMGhXbWFJU21uMW5GdUdIbkd0TUtvVUotZ2lnSnFVN3ZyQl9kQXdZMFRZMHNraHFUWnJqUUpVd2l5ZWE4aTJJUWk3VUVPSHJYU1MyV1JZa181ZDlINXFfN2xWRU1LX01pNmRjQmt5UEtGMUk?oc=5",
       "pubDate": "2026-08-31T22:00:00.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20260831_095316_aa8a0d78",
+      "company": "종근당",
+      "title": "종근당, 감기약 '모드콜 스트롱·이부' 6종 출시…성분별 선택 폭 확대 - 머니투데이 - 머니투데이",
+      "summary": "종근당이 감기약 '모드콜 스트롱'과 '모드콜 이부' 연질캡슐 6종을 새롭게 출시하며 소비자 선택의 폭을 넓혔다.다양한 성분 조합으로 증상에 맞춰 복용할 수 있도록 했다.",
+      "source": "머니투데이",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53Qlk3M0F4TzNtM1h3NjNDOEpjOURvbk5ZWlh2ekR0YTlIZ0RpNThqaXBTVWJvVHpWN0hzNmRUbmFiaTh1NXowT1dRdHQ4S0wzQnNVMC1VQXlURE9zVXBZSTFkZFNPMU9DdmfSAW9BVV95cUxNNHZ4Zl9SVS1Da2hPQVJtc1pzODNnMzhrTHZ2NmY1Tlp0b00yYXBvR1UyVi1GY3gzRmJiN3dHZlVualE4dTRWU3RsUFVZQUtVWlRpSGJRSHZKRjVILWVVMnJPZk9BLVVUaEhvcTZmSzQ?oc=5",
+      "pubDate": "2026-08-31T00:13:03.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20260831_095316_4f925c8c",
+      "company": "종근당",
+      "title": "[단독] 종근당, 우즈벡과 바이오제약 협력 논의…중앙아시아 영토 넓힌다 By The Guru - Investing.com 한국어",
+      "summary": "종근당이 우즈베키스탄과 바이오제약 분야 협력을 논의하며 중앙아시아 시장으로 사업 영토를 확장할 계획이다.이는 종근당의 글로벌 시장 진출 전략의 일환으로 보인다.",
+      "source": "Investing.com 한국어",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVME5ralNKZ04xbkhhMllKVF9xWFNHdm1BcElFM3NheEgwQzZlcTdnUVNCbFhoenprcWw1a0pRemcyVlpmbGplWW5qc3ZXbjhHanBEejJlVW1PY3hGUnczT3NoTi1rRFByS1RQYkZsNC0?oc=5",
+      "pubDate": "2026-08-30T23:43:00.000Z",
       "sentAt": "",
       "publicStatus": "WATCH"
     }
