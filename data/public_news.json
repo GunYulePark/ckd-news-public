@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-30T00:53:17.864Z",
+  "generatedAt": "2026-10-06T03:49:20.395Z",
   "count": 7,
-  "watchCount": 53,
+  "watchCount": 60,
   "items": [
     {
       "id": "issue_20260902_165555_5cf5fb89",
@@ -83,6 +83,72 @@
   ],
   "watchItems": [
     {
+      "id": "issue_20261006_124918_0369e75f",
+      "company": "종근당",
+      "title": "종근당 현장에서 6시그마·TRIZ 배운다 - 당진시대",
+      "summary": "종근당이 현장 직원들을 대상으로 6시그마 및 TRIZ 교육을 진행합니다. 이는 생산성 향상 및 품질 혁신을 위한 경영 활동의 일환입니다.",
+      "source": "당진시대",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9BVWhOUkpFLUlDZGJyRjBfNV9ESnRPWkNQcndiVVN3S01PRVk5Y0FnRllPRUN0dmNUUFJoNWxha29zbURnLTdlSEV0R2ZYOThnSUxVOThINEp6cFdkMmtmNFRhaDVGMWt2dEI00gFvQVVfeXFMTTU3X2ZSQmk0cWtOX1FHMDEwa3R4MEFFeFl1a2RzaXpGRXd5RjdPRlBkOE9sUmJ4WTBrOFJIRkFhMXlMVmxwX0FwY3FZdllaRkRQOHQyR3VuRWVOOFpYaDhLN2stdnhtXzltQWw2a2s0?oc=5",
+      "pubDate": "2026-10-06T01:16:56.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20261002_085651_45dd18ec",
+      "company": "종근당",
+      "title": "종근당 도입 폐암백신 ‘테도피’, 글로벌 3상 중간분석 2027년 초로…연말 모집 완료 - PRESS9",
+      "summary": "종근당이 도입한 폐암백신 '테도피'의 글로벌 3상 임상시험 중간 분석이 2027년 초로 예정되었으며, 연말까지 환자 모집을 완료할 계획입니다. 이는 종근당의 주요 파이프라인 진행 상황을 보여줍니다.",
+      "source": "PRESS9",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tUkZBX2M4NGQ4T2thYVFaZHhRTTBQdkdyTGc1QThaOXVEandVdlgwX1pfYzFGVUpLTFFMc1RwRC05Vnh1RGdxQjJCZHRjWjBmWkxteWpuMmtGbUNKcUhsdVZuR08?oc=5",
+      "pubDate": "2026-10-01T23:45:32.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20261001_135735_8cae8508",
+      "company": "종근당",
+      "title": "같은 약가 인하인데 충격은 딴판…종근당·대웅엔 '태풍', 삼성·셀트엔 '미풍' - ebn.co.kr",
+      "summary": "종근당이 약가 인하로 인해 다른 제약사들과 비교하여 큰 영향을 받고 있다는 분석 기사입니다. 이는 회사의 실적 및 경영에 중요한 영향을 미칠 수 있는 사안입니다.",
+      "source": "ebn.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxSHJzR253d3lrMlhKc01rd2pOa3cyWmIzVzk1SDhWaks4SkxtUWc3aWozV1JvbTRtRGJwd1dvOWRzUUFlUERCX0NKeGZ4a0pBSFBJOWwzWHVKS2ZZcXpXUXpkLU9wNkVK?oc=5",
+      "pubDate": "2026-10-01T04:22:53.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20261001_095313_9d297370",
+      "company": "종근당",
+      "title": "종근당, 위염 치료 천연물 신약 ‘지텍’ 런칭 심포지엄 개최 - v.daum.net",
+      "summary": "종근당이 위염 치료 천연물 신약 '지텍'의 런칭 심포지엄을 개최했습니다. 이를 통해 '지텍'의 임상 결과와 우월성을 소개하며 시장 확대에 나섭니다.",
+      "source": "v.daum.net",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBfbkJrcjhWVjZsdVNaTElzRjBhbi1pU21TNmM1dG9IQUJxc3pjdlBsTjh4RDRrcFp3b2U5YzBrUHlMbzhVRDVlYVRvdG12cEk?oc=5",
+      "pubDate": "2026-10-01T00:42:15.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20261001_085641_f82c20e3",
+      "company": "종근당",
+      "title": "시흥 배곧 연구용지 공모에 종근당 등 바이오기업 3곳 참여 - 아시아경제",
+      "summary": "종근당이 시흥 배곧 연구용지 공모에 참여했습니다. 이는 회사의 연구개발 및 사업 확장을 위한 투자 활동으로 보입니다.",
+      "source": "아시아경제",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8zR0pxcU01MEpCQm5qcWhmTnh1Wkw3Y2FvV05nSVFsWVRDZDF3V3JFelJGam5qMWRPaUJsX20zVkhzLTFpZHQyZ2NHcDR1UUNUcFh2b0ZLVkdSVHkxWDVoZw?oc=5",
+      "pubDate": "2026-09-30T23:48:43.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20260930_175654_41868661",
+      "company": "종근당",
+      "title": "이장한, 종근당 특별관계자 담보주식 1.84%로 변경 보고 - 데이터투자",
+      "summary": "이장한 종근당 회장이 특별관계자 담보주식을 1.84%로 변경 보고했습니다. 이는 주요 주주의 지분 변동과 관련된 중요한 공시 내용입니다.",
+      "source": "데이터투자",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5GTGRmNGZ5WU1iT3JJQXM4T0EtSUFnWDJtek1IYkltUGNpLXVzN2s3bzg4bDNId1ZwaHM4aVpDUXQ0R2RyZ2dDS3NtMHZyZHVSakxxSEhQN2hqWVdGa0FWTkx0SVY4eThxNElSQnlPMmdFdUE?oc=5",
+      "pubDate": "2026-09-30T08:12:39.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
       "id": "issue_20260930_095310_ba66f755",
       "company": "종근당홀딩스",
       "title": "종근당홀딩스, 세종문화회관서 ‘종근당고촌 예술지상’ 기획전 개최 - 브릿지경제",
@@ -90,6 +156,17 @@
       "source": "브릿지경제",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRREFrMkFSTkpPSzZZYWYwRm8wSVoyLWp4Nklla0w5ZTBCMHlXUUpVRm5Rbk8wdF9GMGRWbVBYeEJVR0FBMlNTbWY1cmg3WWRaV3RBa1l6Slk3QQ?oc=5",
       "pubDate": "2026-09-30T00:28:00.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20260930_085641_c3f34c7e",
+      "company": "종근당",
+      "title": "종근당, 케이캡·펙수클루 판매 역량 '지텍'에 쏟는다 - PRESS9",
+      "summary": "종근당이 자사 신제품 '지텍'의 시장 안착을 위해 기존 성공 제품인 '케이캡'과 '펙수클루'의 판매 역량을 집중할 계획입니다. 이는 '지텍'의 성공적인 시장 확대를 위한 종근당의 핵심 마케팅 전략입니다.",
+      "source": "PRESS9",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5rSjRFTWFxQlhlTW1WU0MybTExWnlwNEpmRXBwU3kxTDRwYXhjeDlobld3ZVRnMTgwUG9hek9CLUQwems2UktFTHRmVnNheDF5S25MdlQ5Q2dtQWhWamtPcFhKR3o?oc=5",
+      "pubDate": "2026-09-29T23:22:22.000Z",
       "sentAt": "",
       "publicStatus": "WATCH"
     },
