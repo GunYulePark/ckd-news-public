@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-21T02:57:27.798Z",
+  "generatedAt": "2026-10-23T06:46:46.463Z",
   "count": 7,
-  "watchCount": 92,
+  "watchCount": 98,
   "items": [
     {
       "id": "issue_20260902_165555_5cf5fb89",
@@ -83,6 +83,61 @@
   ],
   "watchItems": [
     {
+      "id": "issue_20261023_154644_45eacf63",
+      "company": "종근당",
+      "title": "종근당 프로메가, 심장병 환우 위해 한국심장재단에 2000만원 기부 - 이슈밸리",
+      "summary": "종근당의 건강기능식품 브랜드 프로메가가 심장병 환우를 위해 한국심장재단에 2000만원을 기부했습니다. 이는 기업의 사회 공헌 활동의 일환입니다.",
+      "source": "이슈밸리",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9mSk1qT2hSWlRIdEF0ek81N3NSYkdyNnpSTWNYSjI2OFVQYmxsZi1WakhjOFkwWnE0YmlmODk1ZW5fUzY0aVJBQ3Y1eFJDcFpEU3VjMFQtLTBPdW91UVMwcWpuc2VrLTJrak9WcQ?oc=5",
+      "pubDate": "2026-10-23T06:14:17.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20261023_074938_2eb4c5d9",
+      "company": "종근당",
+      "title": "종근당, 복합제로 시장 넓히고 혁신 신약으로 동력 키운다 - 뉴스저널리즘",
+      "summary": "종근당이 복합제 개발을 통해 시장을 확대하고, 혁신 신약 개발로 미래 성장 동력을 강화하고 있습니다. 이는 회사의 사업 전략 및 R&D 방향성을 보여줍니다.",
+      "source": "뉴스저널리즘",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5HeWoxX1MxOEc2eTJ1Q0xqQ2IwRkU5cTc0WjAwQXhnSWRpdHE3T0lnR09RNGFWNHdLUklKb2lib3dtOTJfdnFkVk9ndEJ4LU5naXQwV3RHV3BpZ1EzTWltLWlwMG9NTzMwOWhz?oc=5",
+      "pubDate": "2026-10-22T22:05:00.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20261023_074938_72d1a57c",
+      "company": "종근당",
+      "title": "[파이프라인 점검-탈모] '주사제 경쟁' 종근당·대웅, '신약 도전장' 내민 JW·올릭스 - FETV",
+      "summary": "종근당이 탈모 치료제 파이프라인에서 주사제 경쟁에 참여하고 있으며, 대웅제약 등 다른 제약사들과 함께 신약 개발에 도전하고 있습니다. 이는 종근당의 R&D 현황 및 시장 경쟁력을 보여줍니다.",
+      "source": "FETV",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5leW1FUEpnU1hMRHJMZlZGT09pb0NIZEZ5WmJjMlZSNWpZRDJOMHV6QW5TUjZJZ2ptbVhLazF4REc5ZkhoNXV4ZzlOTmZuaHRManlkMldIbEVocmZGSVN0T0wteE9NOE5x?oc=5",
+      "pubDate": "2026-10-22T22:00:00.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20261022_175718_94e2ae2c",
+      "company": "종근당",
+      "title": "한미약품 경영권 흔든 상속세…종근당 3세 승계도 세금이 관건 - 헬스코리아뉴스",
+      "summary": "한미약품의 사례를 통해 종근당의 3세 승계 과정에서 상속세가 중요한 변수가 될 것이라는 분석 기사입니다. 이는 종근당의 경영권 승계와 관련된 핵심 이슈를 다룹니다.",
+      "source": "헬스코리아뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9zY21JOWU3eDR1RjBrTGxqbzFJelAxeC1Cb1p1TTg5VG1TN1kzWnFudm81Mksxcjl0S1IxTEUxcENQeWRqTjZ6UF9vSXlVQXhSWV9DM3lpLWZIcFFDU19haXZ6dEFYaTA?oc=5",
+      "pubDate": "2026-10-22T08:00:42.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20261022_115728_adc75347",
+      "company": "종근당홀딩스",
+      "title": "[단독] 최희남 대표 ‘직접 검토’ 서명에도…종근당홀딩스 정정 공시 또 오류 - 일요신문",
+      "summary": "종근당홀딩스의 최희남 대표가 직접 검토했음에도 정정 공시에 또 다시 오류가 발생했다는 단독 보도입니다. 이는 회사의 공시 신뢰도 및 내부 통제와 관련된 중요한 사안입니다.",
+      "source": "일요신문",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBWMWFDY3NGTUhuQW9wY01xODlmN1dPRlZ6QXpyM191SFA5MUFCN2owLWN0RFFUb0pWTFZsRGFtR3daMXpfYmFQQ09Yc1ZBdUtwT21NSEVnLUdSX2VlbGljWUpWaXZiQQ?oc=5",
+      "pubDate": "2026-10-22T02:14:44.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
       "id": "issue_20261021_115723_dff34f28",
       "company": "종근당",
       "title": "강원대병원 어린이병원, 종근당 키즈오페라 개최 - 병원신문",
@@ -90,6 +145,17 @@
       "source": "병원신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHTDlaMzJjUDlGblNVX0p4OFkxaHpvSU9odkRFM180ZTRJQzhZaHJlT1Nxdk96WUo4TmdhTVFaRzNBY084SjNPeTMtYlh3OTV3SHNmVy1heTljX0htSkxSZWtyY3V6aHZYOEE?oc=5",
       "pubDate": "2026-10-21T02:09:47.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
+    {
+      "id": "issue_20261021_115723_07fb8b9e",
+      "company": "종근당홀딩스",
+      "title": "[단독] 종근당홀딩스, 美 사업확대와 엇박자 '상표등록'…늦어지는 이유는 - FETV",
+      "summary": "종근당홀딩스의 미국 사업 확대를 위한 상표등록이 지연되고 있다는 단독 보도입니다. 이는 해외 사업 전략 및 진행 상황에 영향을 미칠 수 있는 사안입니다.",
+      "source": "FETV",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5jaHdiRzhlaVNQQlFvcEJZOGFZUFdBeHVaN3o2eWF4VFU3NDFvdGM0eGdrZzg5NldzbzF3N2M4NVVWRmE1REVONWNQNzJyVjBaU2FUbXdqbHVNZEs2VDhXQlVMUjlYV1Bv?oc=5",
+      "pubDate": "2026-10-21T00:00:00.000Z",
       "sentAt": "",
       "publicStatus": "WATCH"
     },
