@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T23:56:45.595Z",
+  "generatedAt": "2026-10-27T00:53:32.892Z",
   "count": 7,
   "watchCount": 100,
   "items": [
@@ -82,6 +82,17 @@
     }
   ],
   "watchItems": [
+    {
+      "id": "issue_20261027_095316_18d1f809",
+      "company": "종근당",
+      "title": "종근당 ‘더마그램 피디알엔 크림’, 관광공사 K약국 쇼핑 추천 제품 선정 - 이데일리",
+      "summary": "종근당의 '더마그램 피디알엔 크림'이 한국관광공사의 'K-약국 쇼핑' 추천 제품으로 선정되었습니다. 이는 외국인 관광객을 대상으로 한 제품 홍보 및 판매 확대에 기여할 것으로 보입니다.",
+      "source": "이데일리",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQklRTFFpM1FBdy14dzhKdXJ1V1B1dERHTWtzS0VCNDV5NUZta29iR1BBc0IzUmtRV0VoQTRHdk5lbnpXQXhEZk1TSlI1bTJ6VHRqbG1PNlQ0YmEtUFRyVHBfd0FnQWM5R1RmTUVXWVNZN1ZQczN6WWpiUW9fU3UtYw?oc=5",
+      "pubDate": "2026-10-27T00:45:03.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
     {
       "id": "issue_20261027_085642_a60c4dbf",
       "company": "종근당건강",
@@ -1168,17 +1179,6 @@
       "source": "데일리팜",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5NkNXN3daS0Y5Rm1HUzZzWUFEQnU0Q3R2WkxkLTFmYkNEMjhtWlBjTjZVb2VfcEdzVXkzVW0xbUNTLW5vTGJ6UGJCT25zalVEd2xPdnVB?oc=5",
       "pubDate": "2026-09-02T03:06:48.000Z",
-      "sentAt": "",
-      "publicStatus": "WATCH"
-    },
-    {
-      "id": "issue_20260902_075042_d5d55996",
-      "company": "종근당",
-      "title": "종근당, 美 망막 신약 국내 개발 ‘운전대’…희귀 안질환 확장 - 팜이데일리",
-      "summary": "종근당이 미국 망막 신약의 국내 개발을 주도하며 희귀 안질환 분야로 사업을 확장한다. 이는 종근당의 신약 개발 역량 강화 및 파이프라인 확대를 의미한다.",
-      "source": "팜이데일리",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDSk1PemJqQk9kMDV0Q196NWtXQzRXSkEtRi1XMWJwYVVtaFhGVXJ1U3dWWkRYUUtEZm83OFBoTkhqcUFhRlE2OENCYl9QWlV5U0NQal9PRk5qOURQemVQazVQWll4QkhLMjhiX3pB?oc=5",
-      "pubDate": "2026-09-01T22:00:04.000Z",
       "sentAt": "",
       "publicStatus": "WATCH"
     }
