@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T00:53:22.009Z",
+  "generatedAt": "2026-10-29T01:56:22.456Z",
   "count": 7,
   "watchCount": 100,
   "items": [
@@ -82,6 +82,17 @@
     }
   ],
   "watchItems": [
+    {
+      "id": "issue_20261029_105619_a2691f4a",
+      "company": "종근당건강",
+      "title": "종근당건강 아임비타·월드비전, 취약계층 청소년 위한 ‘성장 응원 키트’ 지원 - 서울경제TV",
+      "summary": "종근당건강이 월드비전과 함께 취약계층 청소년을 위한 '성장 응원 키트'를 지원합니다.이는 기업의 사회 공헌 활동의 일환입니다.",
+      "source": "서울경제TV",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9rRktDaDhEYXZHRWNIXzFSYkpXLWpHQy04M0FKbDJTME1qQm5XREFxeElEQmFFWTRnX2lQeF9md3NDMnBOcEU4RVZpTTVncUp3ZE8zUDl2UmhtbS1uSjNQdkp1azU?oc=5",
+      "pubDate": "2026-10-29T01:28:22.000Z",
+      "sentAt": "",
+      "publicStatus": "WATCH"
+    },
     {
       "id": "issue_20261029_095310_d72c91d4",
       "company": "종근당건강",
@@ -1168,17 +1179,6 @@
       "source": "파이낸셜포스트",
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBUekRmMlBTY01QZC15b0stajJzRy1tMzhkOGhLT2hDbndnWF9leU10Q3VJNFVyeEJYdS1ZZ0pnejhOb1FmN21XaEpKSkQ5Q29FNng1TUhPU2t6MXp2MVQ0d3p1bE1neEw1TEpHeThSU002WGct?oc=5",
       "pubDate": "2026-09-10T18:45:24.000Z",
-      "sentAt": "",
-      "publicStatus": "WATCH"
-    },
-    {
-      "id": "issue_20260910_165521_61a09091",
-      "company": "종근당",
-      "title": "종근당 3세 가족회사 벨에스엠, 10년 만에 대표 교체 - ilyo.co.kr",
-      "summary": "종근당 3세 가족회사인 벨에스엠이 10년 만에 대표를 교체했습니다. 이는 종근당 오너 일가의 경영 및 지배구조와 관련된 변화로 해석될 수 있습니다.",
-      "source": "ilyo.co.kr",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5rRnQ3cmV5S0lsTVdmVW92bjlaYjMtTTVtVTRTRjZwaEowWFJYV1J4MVJoVDVxTjlTcEJCVlpyRS1DYzhKZmh5dExFTXpid0JFRkdKY1NaT2cybGZJNXlwT2hJM2dqUQ?oc=5",
-      "pubDate": "2026-09-10T06:57:40.000Z",
       "sentAt": "",
       "publicStatus": "WATCH"
     }
