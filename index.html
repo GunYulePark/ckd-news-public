@@ -58,7 +58,7 @@
 
     .toolbar {
       display: grid;
-      grid-template-columns: 1fr 180px;
+      grid-template-columns: 1fr 180px 130px;
       gap: 10px;
       margin-bottom: 14px;
     }
@@ -187,6 +187,13 @@
       color: var(--muted);
     }
 
+    .search-help { margin: 0 0 14px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+    .pager { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+    .pager:empty { display: none; }
+    .pager button { border: 1px solid var(--line); background: #fff; color: var(--text); border-radius: 8px; padding: 8px 12px; cursor: pointer; }
+    .pager button:disabled { color: #9ca3af; cursor: default; background: #f9fafb; }
+    .pager span { color: var(--muted); font-size: 13px; }
+
     footer {
       margin-top: 20px;
       color: #9ca3af;
@@ -249,18 +256,26 @@
       </div>
 
       <div class="toolbar">
-        <input id="searchInput" type="search" placeholder="제목, 요약, 회사명 검색" />
-        <select id="companyFilter">
+        <input id="searchInput" type="search" placeholder="제목, 요약, 회사명, 매체 검색" aria-label="이력 검색" />
+        <select id="companyFilter" aria-label="회사 필터">
           <option value="">전체 회사</option>
+        </select>
+        <select id="pageSize" aria-label="페이지당 표시 건수">
+          <option value="50">50건씩 보기</option>
+          <option value="100">100건씩 보기</option>
         </select>
       </div>
 
+      <p class="search-help">검색은 선택한 탭의 전체 보관 이력에 적용됩니다. 화면에는 50건 또는 100건씩 나누어 표시합니다.</p>
+
       <div class="meta-row">
-        <div id="countText">불러오는 중...</div>
+        <div id="countText" role="status" aria-live="polite">불러오는 중...</div>
         <div id="updatedText"></div>
       </div>
 
+      <nav id="pagerTop" class="pager" aria-label="위쪽 이력 페이지"></nav>
       <div id="tableRoot"></div>
+      <nav id="pagerBottom" class="pager" aria-label="아래쪽 이력 페이지"></nav>
     </section>
 
     <footer>
@@ -273,6 +288,8 @@
     let sentItems = [];
     let watchItems = [];
     let currentTab = 'sent';
+    let currentPage = 1;
+    let searchTimer;
 
     const sentTab = document.getElementById('sentTab');
     const watchTab = document.getElementById('watchTab');
@@ -281,10 +298,12 @@
     const countText = document.getElementById('countText');
     const updatedText = document.getElementById('updatedText');
     const tableRoot = document.getElementById('tableRoot');
+    const pageSize = document.getElementById('pageSize');
+    const pagers = [document.getElementById('pagerTop'), document.getElementById('pagerBottom')];
 
     async function init() {
       try {
-        const response = await fetch(DATA_URL + '?v=' + Date.now(), { cache: 'no-store' });
+        const response = await fetch(DATA_URL, { cache: 'no-cache' });
         if (!response.ok) throw new Error('데이터 파일을 불러오지 못했습니다.');
 
         const data = await response.json();
@@ -340,9 +359,18 @@
         return true;
       });
 
+      const size = Number(pageSize.value);
+      const totalPages = Math.max(1, Math.ceil(filtered.length / size));
+      currentPage = Math.min(Math.max(1, currentPage), totalPages);
+      const start = (currentPage - 1) * size;
+      const visibleItems = filtered.slice(start, start + size);
       countText.textContent =
         (currentTab === 'watch' ? '미발송 주요 이슈 ' : '발송 뉴스 ') +
-        filtered.length.toLocaleString('ko-KR') + '건';
+        '전체 ' + allItems.length.toLocaleString('ko-KR') + '건 · 검색 결과 ' +
+        filtered.length.toLocaleString('ko-KR') + '건' +
+        (filtered.length ? ' · ' + (start + 1) + '–' + (start + visibleItems.length) + '건 표시' : '');
+
+      renderPagination(totalPages, filtered.length);
 
       if (filtered.length === 0) {
         tableRoot.innerHTML = '<div class="empty">' +
@@ -362,10 +390,20 @@
             </tr>
           </thead>
           <tbody>
-            ${filtered.map(renderRow).join('')}
+            ${visibleItems.map(renderRow).join('')}
           </tbody>
         </table>
       `;
+    }
+
+    function renderPagination(totalPages, totalItems) {
+      const html = totalItems === 0 ? '' :
+        `<button type="button" data-page="1" ${currentPage === 1 ? 'disabled' : ''}>처음</button>
+         <button type="button" data-page="${currentPage - 1}" ${currentPage === 1 ? 'disabled' : ''}>이전</button>
+         <span>${currentPage.toLocaleString('ko-KR')} / ${totalPages.toLocaleString('ko-KR')} 페이지</span>
+         <button type="button" data-page="${currentPage + 1}" ${currentPage === totalPages ? 'disabled' : ''}>다음</button>
+         <button type="button" data-page="${totalPages}" ${currentPage === totalPages ? 'disabled' : ''}>마지막</button>`;
+      pagers.forEach(pager => { pager.innerHTML = html; });
     }
 
     function renderRow(item) {
@@ -418,18 +456,32 @@
 
     sentTab.addEventListener('click', () => {
       currentTab = 'sent';
+      currentPage = 1;
       render();
     });
 
     watchTab.addEventListener('click', () => {
       currentTab = 'watch';
+      currentPage = 1;
       render();
     });
 
-    searchInput.addEventListener('input', render);
-    companyFilter.addEventListener('change', render);
+    searchInput.addEventListener('input', () => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => { currentPage = 1; render(); }, 150);
+    });
+    companyFilter.addEventListener('change', () => { currentPage = 1; render(); });
+    pageSize.addEventListener('change', () => { currentPage = 1; render(); });
+    pagers.forEach(pager => pager.addEventListener('click', event => {
+      const button = event.target.closest('button[data-page]');
+      if (!button || button.disabled) return;
+      currentPage = Number(button.dataset.page);
+      render();
+      pagers[0].scrollIntoView({ block: 'nearest' });
+    }));
 
     init();
   </script>
 </body>
 </html>
+
